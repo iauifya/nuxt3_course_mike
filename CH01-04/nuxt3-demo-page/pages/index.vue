@@ -30,10 +30,11 @@ const fetchData = async () => {
     <h1>首頁: {{ store.count }}</h1>
     <br />
     <div>
-      <NuxtLink to="/user">user</NuxtLink>
-      <NuxtLink to="/about">about</NuxtLink>
+      <NuxtLink to="/search">搜尋頁</NuxtLink>
+      <NuxtLink to="/course">課程頁</NuxtLink>
+      <!-- <NuxtLink to="/about">about</NuxtLink>
       <NuxtLink to="/async-data">async-data</NuxtLink>
-      <NuxtLink to="/a-lot-of-fetch">a-lot-of-fetch</NuxtLink>
+      <NuxtLink to="/a-lot-of-fetch">a-lot-of-fetch</NuxtLink> -->
     </div>
     {{ data }}
     <br />

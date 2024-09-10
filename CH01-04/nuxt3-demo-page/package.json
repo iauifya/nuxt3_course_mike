@@ -12,7 +12,7 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "nuxt": "^3.3.2"
+    "nuxt": "^3.5.0"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.7",
