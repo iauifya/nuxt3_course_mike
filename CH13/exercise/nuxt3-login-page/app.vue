@@ -1,4 +1,18 @@
-<script setup></script>
+<script setup>
+const store = useLogingStore()
+const cookie = useCookie('auth')
+const auth1 = cookie.value?.token
+onMounted(() => {
+  store.checkAuth()
+
+  setInterval(() => {
+    const auth2 = useCookie('auth')
+    if(auth1 !== auth2.value?.token){
+      window.location.reload()
+    }
+  }, 100);
+})
+</script>
 
 <template>
   <div>

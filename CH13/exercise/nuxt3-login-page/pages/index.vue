@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+const cookie = useCookie('auth')
+console.log('cookie:',cookie)
+</script>
 
 <template>
   <div id="home">
