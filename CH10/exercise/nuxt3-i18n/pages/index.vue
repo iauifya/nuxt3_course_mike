@@ -3,12 +3,12 @@
 <template>
   <div class="lang">
     <div class="menu">
-      <a>首頁</a>
-      <a>關於我們</a>
-      <a>聯絡我們</a>
-      <a>產品介紹</a>
-      <a>最新消息</a>
-      <a>歷史沿革</a>
+      <a>{{ $t("front_page") }}</a>
+      <a>{{ $t("about_us") }}</a>
+      <a>{{ $t("contact_us") }}</a>
+      <a>{{ $t("product_description") }}</a>
+      <a>{{ $t("latest_news") }}</a>
+      <a>{{ $t("history") }}</a>
     </div>
   </div>
 </template>

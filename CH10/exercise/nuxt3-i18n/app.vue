@@ -1,8 +1,15 @@
-<script setup></script>
+<script setup>
+const {locale, setLocaleCookie} = useI18n();
+
+watch(locale, (newValue)=>{
+  // console.log(newValue)
+  setLocaleCookie(newValue)
+})
+</script>
 
 <template>
   <div id="app">
-    <select>
+    <select v-model="locale">
       <option value="zh-TW">zh-TW</option>
       <option value="en-US">en-US</option>
       <option value="ja-JP">ja-JP</option>
