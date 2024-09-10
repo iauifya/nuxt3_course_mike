@@ -20,6 +20,7 @@ export const useVoteStore = defineStore("vote", () => {
         method: "POST",
         body: { type },
       });
+      console.log('res',res)
       setVoteList(res);
       alert("投票完成");
     } catch (error) {
