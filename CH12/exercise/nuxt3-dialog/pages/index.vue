@@ -6,7 +6,7 @@ const openDialog = () => {
     title: "這是標題喔",
     content: "就跟你說是內文了",
     confirm: {
-      btnName: "正常",
+      // btnName: "正常",
       onComplete: () => {
         console.log("確認了喔");
       },
